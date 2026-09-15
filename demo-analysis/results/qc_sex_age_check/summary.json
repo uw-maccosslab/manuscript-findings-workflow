@@ -1,0 +1,171 @@
+{
+  "data_version": "protein-data.csv:90a0462eb03a02bd metadata.csv:62f10c7072fe613e",
+  "n_samples": 40,
+  "n_features": 2340,
+  "seed": 20260915,
+  "params": {
+    "n_perm_sex": 1000,
+    "n_boot": 2000,
+    "n_perm_age": 1000,
+    "hc_prob": 0.9,
+    "resid_z": 3.0
+  },
+  "sex_proteins_present": 0,
+  "sex_protein_search": [
+    {
+      "entry_token": "DDX3Y",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "RS4Y1",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "RS4Y2",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "UTY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "KDM5D",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "USP9Y",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "NLGNY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "IF1AY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "ZFY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "TYB4Y",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "TMSB4Y",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "PRKY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "TXLNGY",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "PCDH11Y",
+      "present": false,
+      "matches": []
+    },
+    {
+      "entry_token": "AMELY",
+      "present": false,
+      "matches": []
+    }
+  ],
+  "sex_primary_model": "ridge_logistic",
+  "sex_primary_auc": {
+    "metric": "LOO_ROC_AUC",
+    "value": 0.7093,
+    "ci_low": 0.5247,
+    "ci_high": 0.8713,
+    "p_value": 0.016983016983016984,
+    "correction": "label-shuffle permutation null (one-sided)",
+    "test": "LOO CV ridge_logistic; 1000-shuffle null; 2000-boot CI",
+    "n": 40
+  },
+  "sex_primary_balanced_accuracy": {
+    "metric": "LOO_balanced_accuracy",
+    "value": 0.6015,
+    "ci_low": null,
+    "ci_high": null,
+    "p_value": null,
+    "correction": null,
+    "test": "LOO CV ridge_logistic",
+    "n": 40
+  },
+  "sex_primary_null_auc_mean": 0.46571929824561403,
+  "sex_elasticnet_auc": {
+    "metric": "LOO_ROC_AUC",
+    "value": 0.2882,
+    "ci_low": 0.1276,
+    "ci_high": 0.4737,
+    "p_value": null,
+    "correction": "no null (secondary comparison model)",
+    "test": "LOO CV elasticnet_logistic; 2000-boot CI (null skipped)",
+    "n": 40
+  },
+  "sex_high_confidence_mismatches": [
+    {
+      "SampleID": "TPAD1010",
+      "Condition": "PDD",
+      "annotated_Sex": "Female",
+      "annotated_isMale": 0,
+      "oof_P_male": 0.9443,
+      "predicted_isMale": 1,
+      "predicted_Sex": "Male",
+      "concordant": false,
+      "P_opposite_class": 0.9443
+    },
+    {
+      "SampleID": "TPAD1009",
+      "Condition": "PDD",
+      "annotated_Sex": "Female",
+      "annotated_isMale": 0,
+      "oof_P_male": 0.917,
+      "predicted_isMale": 1,
+      "predicted_Sex": "Male",
+      "concordant": false,
+      "P_opposite_class": 0.917
+    }
+  ],
+  "age_pearson": {
+    "metric": "pearson_r(annotated_age, LOO_predicted_age)",
+    "value": -0.6284,
+    "ci_low": -0.786,
+    "ci_high": -0.394,
+    "p_value": 0.6343656343656343,
+    "correction": "label-shuffle permutation null (one-sided)",
+    "test": "LOO RidgeCV predicted age; 1000-shuffle null; Fisher-z CI",
+    "n": 40
+  },
+  "age_spearman": {
+    "metric": "spearman_rho(annotated_age, LOO_predicted_age)",
+    "value": -0.9685,
+    "ci_low": null,
+    "ci_high": null,
+    "p_value": null,
+    "correction": null,
+    "test": "LOO RidgeCV predicted age",
+    "n": 40
+  },
+  "age_rmse_years": 7.17,
+  "age_r2": -0.1186,
+  "age_null_r_mean": -0.4695003275385857,
+  "age_gross_outliers": []
+}

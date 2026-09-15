@@ -1,0 +1,36 @@
+[project]
+name = "findings-workflow-study"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+    "pandas>=3.0.5",
+    "pronoms>=0.4.0",
+    "pyarrow>=25.0.1",
+    "pycombat>=0.20",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.17.1",
+    "statsmodels>=0.15.0",
+]
+
+[tool.mypy]
+python_version = "3.12"           # match the project's pinned/actual interpreter (.python-version = 3.12);
+                                  # under 3.11 mypy false-fails inside numpy's own 3.12-syntax stubs. Runtime floor stays >=3.11.
+strict = true                    # full strict type checking — the promotion type-gate has real teeth
+ignore_missing_imports = true    # scientific deps often ship no stubs; don't fail the gate on those
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+# Strict, explicit rule set (conventions/coding.md) — NOT ruff's minimal defaults.
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "C4", "PD", "NPY", "RUF"]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.168.0",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.7",
+]

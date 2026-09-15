@@ -1,0 +1,3 @@
+SampleID,Condition,annotated_Sex,annotated_isMale,oof_P_male,predicted_isMale,predicted_Sex,concordant,P_opposite_class
+TPAD1010,PDD,Female,0,0.9443,1,Male,False,0.9443
+TPAD1009,PDD,Female,0,0.917,1,Male,False,0.917

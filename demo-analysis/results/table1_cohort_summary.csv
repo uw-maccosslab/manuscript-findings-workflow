@@ -1,0 +1,5 @@
+Group,n,Age mean(sd),Age range,Female n,Male n,Educ mean(sd),Cohort (Kerchner/Poston/ADRC-PUC/PUC-only),Collect year med
+ADD,10,75.7 (7.4),64-88,5,5,16.5 (2.5),10/0/0/0,2013
+PDD,10,72.8 (7.1),60-84,4,6,16.3 (2.6),0/7/2/1,2014
+PDCN,10,69.2 (4.6),61-74,5,5,16.5 (3.2),0/10/0/0,2014
+HCN,10,74.0 (7.2),65-83,5,5,17.4 (1.8),7/3/0/0,2014

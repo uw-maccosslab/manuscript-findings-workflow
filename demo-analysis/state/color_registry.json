@@ -1,0 +1,68 @@
+{
+  "NormalizationState": {
+    "scope": "project",
+    "values": {
+      "Delivered (normalized, batch-corrected)": "#E69F00"
+    }
+  },
+  "_comment": "Category -> color registry (spec doc 06.5). Keys starting with '_' are reserved metadata; every other top-level key is a category dimension with {scope, values}. Universal defaults ship with the plugin; project-specific categories are added after METADATA.md exists. Every plotting script reads this file so a given category value uses the SAME color in every figure.",
+  "_palette": {
+    "colors": [
+      "#E69F00",
+      "#56B4E9",
+      "#009E73",
+      "#F0E442",
+      "#0072B2",
+      "#D55E00",
+      "#CC79A7",
+      "#000000"
+    ],
+    "max_categorical": 8,
+    "name": "Okabe-Ito",
+    "note": "Color-blind-friendly categorical palette. Color encodes at most 8 categories; beyond 8, change the encoding strategy (facet, second channel, group the tail, or position/sequential) rather than adding colors (doc 06.6).",
+    "scope": "universal"
+  },
+  "cohort": {
+    "_note": "Source cohort/site. Confounded with diagnostic group (see caveat finding).",
+    "scope": "project",
+    "values": {
+      "ADRC/PUC": "#F0E442",
+      "Kerchner": "#56B4E9",
+      "PUC only": "#000000",
+      "Poston": "#CC79A7"
+    }
+  },
+  "group": {
+    "_note": "Diagnostic group (Condition). ADD is the group of interest; given the standout vermillion.",
+    "scope": "project",
+    "values": {
+      "ADD": "#D55E00",
+      "HCN": "#0072B2",
+      "PDCN": "#009E73",
+      "PDD": "#E69F00"
+    }
+  },
+  "highlight_group": {
+    "scope": "project",
+    "values": {
+      "AD-marker parent protein": "#56B4E9",
+      "EV-QC anchor (MISEV2018)": "#E69F00",
+      "EV-cargo / candidate (some contested)": "#009E73"
+    }
+  },
+  "primary_contrast": {
+    "_note": "Binary primary contrast: ADD vs all others pooled.",
+    "scope": "project",
+    "values": {
+      "ADD": "#D55E00",
+      "Other": "#999999"
+    }
+  },
+  "sex": {
+    "scope": "universal",
+    "values": {
+      "female": "#D55E00",
+      "male": "#0072B2"
+    }
+  }
+}

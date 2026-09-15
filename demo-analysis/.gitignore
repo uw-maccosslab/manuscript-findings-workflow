@@ -1,0 +1,5 @@
+# Findings Workflow — project-local Python environment (regenerable; not committed)
+.uv/
+.venv/
+__pycache__/
+*.pyc

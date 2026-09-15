@@ -1,0 +1,9 @@
+{
+  "group_x_cohort_V": 0.515,
+  "group_x_sex_V": 0.0,
+  "ADD_vs_other_cohort_V": 0.62,
+  "PD_vs_other_cohort_V": 0.828,
+  "year_kruskal_p": 0.0256,
+  "age_kruskal_p": 0.2374,
+  "runorder_kruskal_p": 0.9766
+}

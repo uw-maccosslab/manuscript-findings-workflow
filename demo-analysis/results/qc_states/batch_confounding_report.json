@@ -1,0 +1,52 @@
+{
+  "data_version": {
+    "data": "90a0462eb03a02bd",
+    "metadata": "62f10c7072fe613e"
+  },
+  "reports": [
+    {
+      "batch_column": "Cohort",
+      "covariate_column": "Condition",
+      "cramers_v": 0.5154317943632531,
+      "perfectly_confounded": false,
+      "message": "'Cohort' is STRONGLY confounded with 'Condition' (Cram\u00e9r's V=0.52 >= 0.5). Batch correction will attenuate this covariate's signal; report corrected AND uncorrected results and carry the confound into the caveats.",
+      "crosstab": {
+        "ADRC/PUC": {
+          "ADD": 0,
+          "HCN": 0,
+          "PDCN": 0,
+          "PDD": 2
+        },
+        "Kerchner": {
+          "ADD": 10,
+          "HCN": 7,
+          "PDCN": 0,
+          "PDD": 0
+        },
+        "PUC only": {
+          "ADD": 0,
+          "HCN": 0,
+          "PDCN": 0,
+          "PDD": 1
+        },
+        "Poston": {
+          "ADD": 0,
+          "HCN": 3,
+          "PDCN": 10,
+          "PDD": 7
+        }
+      }
+    }
+  ],
+  "warnings_captured": [
+    {
+      "category": "BatchConfoundingWarning",
+      "message": "'Cohort' is STRONGLY confounded with 'Condition' (Cram\u00e9r's V=0.52 >= 0.5). Batch correction will attenuate this covariate's signal; report corrected AND uncorrected results and carry the confound into the caveats."
+    }
+  ],
+  "corroborates_findings": [
+    "0001",
+    "0004"
+  ],
+  "note": "This is a RE-CONFIRMATION of the Cohort<->Condition confound already recorded as findings 0001 (group-aliased-with-cohort) and 0004 (batch-correction-extrapolated-single-cohort). It produces no new correction (the delivered matrix is already batch-corrected -- see state/DATA_DESCRIPTION.md) and is not itself a new finding."
+}
