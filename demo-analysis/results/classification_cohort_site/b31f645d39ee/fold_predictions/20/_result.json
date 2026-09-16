@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "dataclass": "FoldPrediction",
+  "fields": {
+    "y_true": {
+      "kind": "ndarray_npy",
+      "file": "y_true.npy"
+    },
+    "y_prob": {
+      "kind": "ndarray_npy",
+      "file": "y_prob.npy"
+    },
+    "repeat": {
+      "kind": "scalar",
+      "value": 4
+    },
+    "fold": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "test_indices": {
+      "kind": "ndarray_npy",
+      "file": "test_indices.npy"
+    }
+  }
+}

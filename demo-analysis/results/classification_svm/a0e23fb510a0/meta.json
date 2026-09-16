@@ -1,0 +1,43 @@
+{
+  "analysis": "classification_svm",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "params": {
+    "outcome": "Condition",
+    "binarize": "LevelMap",
+    "positive_label": "ADD",
+    "negative_levels": [
+      "HCN",
+      "PDCN",
+      "PDD"
+    ],
+    "method": "linear_svm",
+    "generalization_target": "individuals",
+    "cv_scheme": "stratified_kfold",
+    "n_splits": 5,
+    "n_repeats": 5,
+    "grouped": false,
+    "stability_repeats": 10,
+    "tuning_metric": "roc_auc",
+    "select": "best",
+    "c_grid": [
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1
+    ],
+    "top_k": 20,
+    "feature_list": null,
+    "run_null": true,
+    "null_permutation": "units",
+    "seed": 20260915,
+    "n_permutations": 1000,
+    "null_repeats": 3
+  },
+  "seed": 20260915,
+  "fingerprint": "a0e23fb510a0",
+  "label": "add-vs-other linear-SVM NULL pass (run_null=True, c_grid 1e-4..1e-1)",
+  "created": null
+}

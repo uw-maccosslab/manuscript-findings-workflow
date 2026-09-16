@@ -1,0 +1,80 @@
+{
+  "analysis": "PRIMARY classification ADD vs Other \u2014 NULL pass (run_null=True)",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "seed": 20260915,
+  "outcome": "ADD (10, positive) vs Other {PDD,PDCN,HCN} (30, negative)",
+  "cv": "stratified 5-fold x 5 repeats at the individual (row) level; no groups (subjects are singletons)",
+  "null_permutation": "units (groups=None -> plain row/'samples' shuffle)",
+  "supersedes": {
+    "elastic_net_first_pass": "cbd809ac6168",
+    "linear_svm_first_pass": "cba84421b85e"
+  },
+  "elastic_net": {
+    "cache_fingerprint": "902c1e98c018",
+    "cache_path": "results/classification/902c1e98c018",
+    "max_iter": 20000,
+    "best_c": 1.0,
+    "best_l1_ratio": 0.25,
+    "n_features_selected_nonzero": 257,
+    "cv_balanced_accuracy": 0.83,
+    "cv_pr_auc": 0.87,
+    "null_read": {
+      "nested_cv_auc_tune_in_fold": 0.94,
+      "observed_auc_fixed_hyperparam": 0.9556,
+      "null_auc_mean": 0.5016,
+      "null_auc_95pct_interval": [
+        0.2443,
+        0.7778
+      ],
+      "null_auc_max": 0.8833,
+      "observed_minus_null_mean": 0.4539,
+      "empirical_permutation_p": 0.001,
+      "n_permutations": 1000,
+      "collapses_to_null": false,
+      "verdict": "STAYS CLEARLY ABOVE the null \u2014 rules out leakage / pure overfitting (does NOT resolve the ADD==Kerchner cohort confound)"
+    },
+    "warnings": []
+  },
+  "linear_svm": {
+    "cache_fingerprint": "a0e23fb510a0",
+    "cache_path": "results/classification_svm/a0e23fb510a0",
+    "c_grid": [
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1
+    ],
+    "best_c": 0.001,
+    "plateau_start_c": 0.001,
+    "n_folds_sub_plateau": 13,
+    "n_support_vectors": 22,
+    "cv_balanced_accuracy": 0.74,
+    "cv_pr_auc": 0.92,
+    "null_read": {
+      "nested_cv_auc_tune_in_fold": 0.9633,
+      "observed_auc_fixed_hyperparam": 0.9722,
+      "null_auc_mean": 0.4995,
+      "null_auc_95pct_interval": [
+        0.2278,
+        0.7557
+      ],
+      "null_auc_max": 0.9167,
+      "observed_minus_null_mean": 0.4728,
+      "empirical_permutation_p": 0.001,
+      "n_permutations": 1000,
+      "collapses_to_null": false,
+      "verdict": "STAYS CLEARLY ABOVE the null \u2014 rules out leakage / pure overfitting (does NOT resolve the ADD==Kerchner cohort confound)"
+    },
+    "warnings": [
+      "TuningNoiseWarning: 13 of 25 outer folds tuned C below the all-data plateau start: the inner folds cannot resolve the low-C end of c_grid, so tuning noise (not the data) is lowering the nested estimate. Narrow c_grid to bracket the knee shown in the C-curve figure and re-run."
+    ]
+  },
+  "caveats": [
+    "The null rules out leakage / pure overfitting ONLY. It does NOT resolve the cohort confound: ADD is 100% Kerchner among these 40 samples (finding 0001), so the unit-level label shuffle permutes the SAME partition that is both ADD and Kerchner. Above-null != disease-not-site.",
+    "Matrix is already limma removeBatchEffect-corrected on Cohort (finding 0004); ADD is single-cohort so its correction was EXTRAPOLATED, not estimated.",
+    "Small n (10 positives): wide CV CIs; EXPLORATORY."
+  ]
+}

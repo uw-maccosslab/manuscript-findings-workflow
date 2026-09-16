@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "dataclass": "BorutaResult",
+  "fields": {
+    "feature_names": {
+      "kind": "ndarray_json",
+      "file": "feature_names.json"
+    },
+    "decision": {
+      "kind": "ndarray_json",
+      "file": "decision.json"
+    },
+    "ranking": {
+      "kind": "ndarray_npy",
+      "file": "ranking.npy"
+    },
+    "importance": {
+      "kind": "ndarray_npy",
+      "file": "importance.npy"
+    },
+    "importance_history": {
+      "kind": "ndarray_npy",
+      "file": "importance_history.npy"
+    },
+    "shadow_max_history": {
+      "kind": "ndarray_npy",
+      "file": "shadow_max_history.npy"
+    },
+    "shadow_threshold": {
+      "kind": "scalar",
+      "value": 0.00532923378325126
+    },
+    "target": {
+      "kind": "scalar",
+      "value": "add_vs_other"
+    },
+    "task": {
+      "kind": "scalar",
+      "value": "classification"
+    },
+    "classes": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        "ADD",
+        "Other"
+      ]
+    },
+    "n_confirmed": {
+      "kind": "scalar",
+      "value": 40
+    },
+    "n_tentative": {
+      "kind": "scalar",
+      "value": 15
+    },
+    "n_rejected": {
+      "kind": "scalar",
+      "value": 2285
+    },
+    "n_iter": {
+      "kind": "scalar",
+      "value": 99
+    },
+    "n_samples": {
+      "kind": "scalar",
+      "value": 40
+    },
+    "n_features": {
+      "kind": "scalar",
+      "value": 2340
+    },
+    "n_dropped_constant": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "n_dropped_missing_target": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "max_iter": {
+      "kind": "scalar",
+      "value": 100
+    },
+    "alpha": {
+      "kind": "scalar",
+      "value": 0.05
+    },
+    "perc": {
+      "kind": "scalar",
+      "value": 100.0
+    },
+    "random_state": {
+      "kind": "scalar",
+      "value": 20260915
+    }
+  }
+}

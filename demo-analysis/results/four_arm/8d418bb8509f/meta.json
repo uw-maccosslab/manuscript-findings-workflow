@@ -1,0 +1,23 @@
+{
+  "analysis": "four_arm",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "params": {
+    "signature_set": "boruta:762e16f294e3 (40 Confirmed, ADD-vs-Other)",
+    "arms": [
+      "ADD",
+      "PDD",
+      "PDCN",
+      "HCN"
+    ],
+    "score": "per-protein z across 40 samples, per-arm mean of up/down subset",
+    "effect_size": "Hedges g (ADD vs arm), 95% CI",
+    "comparison_test": "Welch t",
+    "correction": "BH over 6 comparisons (2 sets x 3 arms)",
+    "add_vs_pdd": "moderated eBayes DE, effect=ADD-PDD, BH-q, CROSS-COHORT",
+    "method": "z-summary-score + moderated-DE"
+  },
+  "seed": 20260915,
+  "fingerprint": "8d418bb8509f",
+  "label": "four-arm ADD-specificity (Boruta-40 up/down profile + ADD-vs-PDD DE)",
+  "created": null
+}

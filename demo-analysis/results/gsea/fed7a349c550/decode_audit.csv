@@ -1,0 +1,2 @@
+n_total_de_rows,n_no_accession_parsed,n_accessions_queried,n_accessions_mapped_to_symbol,n_rows_mapped,n_rows_unmapped_dropped,n_unique_symbols_before_dedup,n_symbol_collisions_dropped_keep_max_abs_t,n_symbols_in_ranked_list
+2340,0,2340,2324,2324,16,2324,0,2324

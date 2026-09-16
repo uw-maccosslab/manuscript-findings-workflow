@@ -1,0 +1,1463 @@
+{
+  "analysis": "PRIMARY classification ADD vs Other (FIRST PASS, no null)",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "seed": 20260915,
+  "outcome": "ADD (10, positive) vs Other {PDD,PDCN,HCN} (30, negative)",
+  "cv": "stratified 5-fold x 5 repeats at the individual (row) level; no groups (subjects are singletons)",
+  "run_null": false,
+  "phase_cap": "exploratory (performance not yet tested against a label-shuffle null; coefficients/weights not yet licensed)",
+  "elastic_net": {
+    "cache_fingerprint": "cbd809ac6168",
+    "cache_path": "results/classification/cbd809ac6168",
+    "cv_roc_auc": 0.94,
+    "cv_roc_auc_sd_over_folds": 0.0898,
+    "cv_balanced_accuracy": 0.83,
+    "cv_pr_auc": 0.87,
+    "pooled_oof_mcc": 0.6331,
+    "best_c": 1.0,
+    "best_l1_ratio": 0.25,
+    "n_features_selected_nonzero": 257,
+    "per_fold_auc": [
+      1.0,
+      1.0,
+      1.0,
+      0.8333,
+      1.0,
+      0.75,
+      1.0,
+      0.75,
+      1.0,
+      1.0,
+      1.0,
+      0.75,
+      1.0,
+      0.8333,
+      1.0,
+      1.0,
+      0.9167,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.8333,
+      0.9167,
+      0.9167,
+      1.0
+    ],
+    "stability_top": [
+      {
+        "feature": "sp|Q16822|PCKGM_HUMAN",
+        "gene": "PCKGM",
+        "coef": -0.127,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.117,
+          -0.08
+        ]
+      },
+      {
+        "feature": "sp|P29350|PTN6_HUMAN",
+        "gene": "PTN6",
+        "coef": -0.1219,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.1146,
+          -0.0923
+        ]
+      },
+      {
+        "feature": "sp|Q9NRR3|C42S2_HUMAN",
+        "gene": "C42S2",
+        "coef": 0.1084,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0604,
+          0.1061
+        ]
+      },
+      {
+        "feature": "sp|Q6ZU65|UBN2_HUMAN",
+        "gene": "UBN2",
+        "coef": 0.104,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0593,
+          0.1073
+        ]
+      },
+      {
+        "feature": "sp|O60763|USO1_HUMAN",
+        "gene": "USO1",
+        "coef": -0.1022,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.1031,
+          -0.0806
+        ]
+      },
+      {
+        "feature": "sp|Q9HC98|NEK6_HUMAN / sp|Q8TDX7|NEK7_HUMAN",
+        "gene": "NEK6",
+        "coef": -0.0965,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 0.98,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0878,
+          -0.0546
+        ]
+      },
+      {
+        "feature": "sp|P36507|MP2K2_HUMAN",
+        "gene": "MP2K2",
+        "coef": -0.0946,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0964,
+          -0.0709
+        ]
+      },
+      {
+        "feature": "sp|Q6NYC1|JMJD6_HUMAN",
+        "gene": "JMJD6",
+        "coef": -0.0916,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0932,
+          -0.0644
+        ]
+      },
+      {
+        "feature": "sp|P62333|PRS10_HUMAN",
+        "gene": "PRS10",
+        "coef": -0.0869,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0797,
+          -0.062
+        ]
+      },
+      {
+        "feature": "sp|O14653|GOSR2_HUMAN",
+        "gene": "GOSR2",
+        "coef": -0.0866,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.082,
+          -0.0515
+        ]
+      },
+      {
+        "feature": "sp|O43242|PSMD3_HUMAN",
+        "gene": "PSMD3",
+        "coef": -0.0851,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0903,
+          -0.0573
+        ]
+      },
+      {
+        "feature": "sp|Q9P253|VPS18_HUMAN",
+        "gene": "VPS18",
+        "coef": 0.0845,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0502,
+          0.0753
+        ]
+      },
+      {
+        "feature": "sp|P26440|IVD_HUMAN",
+        "gene": "IVD",
+        "coef": 0.0843,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0401,
+          0.0853
+        ]
+      },
+      {
+        "feature": "sp|Q9Y3C8|UFC1_HUMAN",
+        "gene": "UFC1",
+        "coef": -0.0839,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 0.96,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0842,
+          -0.0503
+        ]
+      },
+      {
+        "feature": "sp|Q8N543|OGFD1_HUMAN",
+        "gene": "OGFD1",
+        "coef": 0.0826,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.042,
+          0.0815
+        ]
+      },
+      {
+        "feature": "sp|P19404|NDUV2_HUMAN",
+        "gene": "NDUV2",
+        "coef": -0.0824,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0827,
+          -0.0478
+        ]
+      },
+      {
+        "feature": "sp|P29692|EF1D_HUMAN",
+        "gene": "EF1D",
+        "coef": -0.0823,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 0.96,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0872,
+          -0.0463
+        ]
+      },
+      {
+        "feature": "sp|Q7KZ85|SPT6H_HUMAN",
+        "gene": "SPT6H",
+        "coef": -0.0806,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0764,
+          -0.043
+        ]
+      },
+      {
+        "feature": "sp|Q3MIN7|RGL3_HUMAN",
+        "gene": "RGL3",
+        "coef": -0.0768,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0641,
+          -0.0301
+        ]
+      },
+      {
+        "feature": "sp|P40939|ECHA_HUMAN",
+        "gene": "ECHA",
+        "coef": 0.0758,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0325,
+          0.0724
+        ]
+      },
+      {
+        "feature": "sp|O75844|FACE1_HUMAN",
+        "gene": "FACE1",
+        "coef": -0.0753,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0647,
+          -0.0391
+        ]
+      },
+      {
+        "feature": "sp|P54819|KAD2_HUMAN",
+        "gene": "KAD2",
+        "coef": 0.0747,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 0.94,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0372,
+          0.0736
+        ]
+      },
+      {
+        "feature": "sp|Q13618|CUL3_HUMAN",
+        "gene": "CUL3",
+        "coef": 0.0744,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 0.88,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0442,
+          0.0791
+        ]
+      },
+      {
+        "feature": "sp|P43686|PRS6B_HUMAN",
+        "gene": "PRS6B",
+        "coef": -0.0736,
+        "coef_sign_toward": "Other",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0747,
+          -0.0433
+        ]
+      },
+      {
+        "feature": "sp|Q02108|GCYA1_HUMAN",
+        "gene": "GCYA1",
+        "coef": 0.0734,
+        "coef_sign_toward": "ADD",
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0421,
+          0.0805
+        ]
+      }
+    ]
+  },
+  "linear_svm": {
+    "cache_fingerprint": "cba84421b85e",
+    "cache_path": "results/classification_svm/cba84421b85e",
+    "cv_roc_auc": 0.9633,
+    "cv_roc_auc_sd_over_folds": 0.067,
+    "cv_balanced_accuracy": 0.74,
+    "cv_pr_auc": 0.92,
+    "pooled_oof_mcc": 0.5196,
+    "best_c": 0.001,
+    "plateau_start_c": 0.001,
+    "n_folds_sub_plateau": 13,
+    "n_support_vectors": 22,
+    "n_support_negative": 12,
+    "n_support_positive": 10,
+    "per_fold_auc": [
+      1.0,
+      1.0,
+      1.0,
+      0.8333,
+      1.0,
+      0.75,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9167,
+      1.0,
+      0.9167,
+      1.0,
+      1.0,
+      0.9167,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.8333,
+      0.9167,
+      1.0,
+      1.0
+    ],
+    "stability_top": [
+      {
+        "feature": "sp|Q16822|PCKGM_HUMAN",
+        "gene": "PCKGM",
+        "coef": -0.0068,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.86,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.006,
+          -0.0049
+        ]
+      },
+      {
+        "feature": "sp|Q6ZU65|UBN2_HUMAN",
+        "gene": "UBN2",
+        "coef": 0.0062,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.56,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0044,
+          0.0056
+        ]
+      },
+      {
+        "feature": "sp|Q9H074|PAIP1_HUMAN",
+        "gene": "PAIP1",
+        "coef": -0.0062,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.76,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0055,
+          -0.0045
+        ]
+      },
+      {
+        "feature": "sp|A8MWD9|RUXGL_HUMAN / sp|P62308|RUXG_HUMAN",
+        "gene": "RUXGL",
+        "coef": -0.0061,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.66,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0055,
+          -0.0046
+        ]
+      },
+      {
+        "feature": "sp|Q0P6D2|DIK1C_HUMAN",
+        "gene": "DIK1C",
+        "coef": -0.006,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.62,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0054,
+          -0.0045
+        ]
+      },
+      {
+        "feature": "sp|P29692|EF1D_HUMAN",
+        "gene": "EF1D",
+        "coef": -0.0059,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.56,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0053,
+          -0.0043
+        ]
+      },
+      {
+        "feature": "sp|Q9HC98|NEK6_HUMAN / sp|Q8TDX7|NEK7_HUMAN",
+        "gene": "NEK6",
+        "coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.42,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0051,
+          -0.0042
+        ]
+      },
+      {
+        "feature": "sp|Q01082|SPTB2_HUMAN",
+        "gene": "SPTB2",
+        "coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.56,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0054,
+          -0.0041
+        ]
+      },
+      {
+        "feature": "sp|Q68D91|MBLC2_HUMAN",
+        "gene": "MBLC2",
+        "coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.3,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0049,
+          -0.0039
+        ]
+      },
+      {
+        "feature": "sp|Q6P3W7|SCYL2_HUMAN",
+        "gene": "SCYL2",
+        "coef": 0.0057,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.28,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0038,
+          0.0049
+        ]
+      },
+      {
+        "feature": "sp|Q96FZ7|CHMP6_HUMAN",
+        "gene": "CHMP6",
+        "coef": -0.0057,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.32,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.005,
+          -0.004
+        ]
+      },
+      {
+        "feature": "sp|O60716|CTND1_HUMAN",
+        "gene": "CTND1",
+        "coef": -0.0057,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.38,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0051,
+          -0.0037
+        ]
+      },
+      {
+        "feature": "sp|P19404|NDUV2_HUMAN",
+        "gene": "NDUV2",
+        "coef": -0.0056,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.56,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0051,
+          -0.0045
+        ]
+      },
+      {
+        "feature": "sp|P29350|PTN6_HUMAN",
+        "gene": "PTN6",
+        "coef": -0.0055,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.44,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.005,
+          -0.0044
+        ]
+      },
+      {
+        "feature": "sp|Q9NRR3|C42S2_HUMAN",
+        "gene": "C42S2",
+        "coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.32,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0039,
+          0.0051
+        ]
+      },
+      {
+        "feature": "sp|Q13618|CUL3_HUMAN",
+        "gene": "CUL3",
+        "coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.36,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0037,
+          0.0051
+        ]
+      },
+      {
+        "feature": "sp|Q9HD20|AT131_HUMAN",
+        "gene": "AT131",
+        "coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.4,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0038,
+          0.005
+        ]
+      },
+      {
+        "feature": "sp|O43242|PSMD3_HUMAN",
+        "gene": "PSMD3",
+        "coef": -0.0055,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.36,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0049,
+          -0.0042
+        ]
+      },
+      {
+        "feature": "sp|O60763|USO1_HUMAN",
+        "gene": "USO1",
+        "coef": -0.0054,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.4,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.005,
+          -0.0043
+        ]
+      },
+      {
+        "feature": "sp|Q6NVY1|HIBCH_HUMAN",
+        "gene": "HIBCH",
+        "coef": -0.0054,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.28,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0049,
+          -0.0038
+        ]
+      },
+      {
+        "feature": "sp|Q16881|TRXR1_HUMAN",
+        "gene": "TRXR1",
+        "coef": 0.0054,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.3,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0037,
+          0.0048
+        ]
+      },
+      {
+        "feature": "sp|Q6NYC1|JMJD6_HUMAN",
+        "gene": "JMJD6",
+        "coef": -0.0053,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.3,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0048,
+          -0.0042
+        ]
+      },
+      {
+        "feature": "sp|Q16363|LAMA4_HUMAN",
+        "gene": "LAMA4",
+        "coef": 0.0052,
+        "coef_sign_toward": "ADD",
+        "top_k_frequency": 0.24,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          0.0036,
+          0.0048
+        ]
+      },
+      {
+        "feature": "sp|P62333|PRS10_HUMAN",
+        "gene": "PRS10",
+        "coef": -0.0052,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.26,
+        "sign_consistency": 1.0,
+        "coef_iqr": [
+          -0.0048,
+          -0.0042
+        ]
+      },
+      {
+        "feature": "sp|Q15067|ACOX1_HUMAN",
+        "gene": "ACOX1",
+        "coef": -0.0052,
+        "coef_sign_toward": "Other",
+        "top_k_frequency": 0.2,
+        "sign_consistency": 0.96,
+        "coef_iqr": [
+          -0.0046,
+          -0.0033
+        ]
+      }
+    ]
+  },
+  "paired_per_fold_comparison": {
+    "n_folds": 25,
+    "mean_paired_diff_en_minus_svm": -0.0233,
+    "median_paired_diff_en_minus_svm": 0.0,
+    "sd_paired_diff": 0.0602,
+    "seed_noise_band": 0.03,
+    "n_folds_en_wins": 0,
+    "n_folds_svm_wins": 4,
+    "n_folds_tie_within_band": 21,
+    "wilcoxon_signed_rank_p": 0.0679,
+    "verdict": "TIE \u2014 the mean paired AUC difference (-0.0233) is inside the seed-noise band (+/-0.03 at n~40). Neither model wins on performance; choose by the reading needed (sparse minimal set -> elastic net; dense module weights -> SVM).",
+    "per_fold": [
+      {
+        "repeat": 0,
+        "fold": 0,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 0,
+        "fold": 1,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 0,
+        "fold": 2,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 0,
+        "fold": 3,
+        "auc_elastic_net": 0.8333,
+        "auc_linear_svm": 0.8333,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 0,
+        "fold": 4,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 1,
+        "fold": 0,
+        "auc_elastic_net": 0.75,
+        "auc_linear_svm": 0.75,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 1,
+        "fold": 1,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 1,
+        "fold": 2,
+        "auc_elastic_net": 0.75,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": -0.25
+      },
+      {
+        "repeat": 1,
+        "fold": 3,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 1,
+        "fold": 4,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 2,
+        "fold": 0,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 2,
+        "fold": 1,
+        "auc_elastic_net": 0.75,
+        "auc_linear_svm": 0.9167,
+        "diff_en_minus_svm": -0.1667
+      },
+      {
+        "repeat": 2,
+        "fold": 2,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 2,
+        "fold": 3,
+        "auc_elastic_net": 0.8333,
+        "auc_linear_svm": 0.9167,
+        "diff_en_minus_svm": -0.0833
+      },
+      {
+        "repeat": 2,
+        "fold": 4,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 3,
+        "fold": 0,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 3,
+        "fold": 1,
+        "auc_elastic_net": 0.9167,
+        "auc_linear_svm": 0.9167,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 3,
+        "fold": 2,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 3,
+        "fold": 3,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 3,
+        "fold": 4,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 4,
+        "fold": 0,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 4,
+        "fold": 1,
+        "auc_elastic_net": 0.8333,
+        "auc_linear_svm": 0.8333,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 4,
+        "fold": 2,
+        "auc_elastic_net": 0.9167,
+        "auc_linear_svm": 0.9167,
+        "diff_en_minus_svm": 0.0
+      },
+      {
+        "repeat": 4,
+        "fold": 3,
+        "auc_elastic_net": 0.9167,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": -0.0833
+      },
+      {
+        "repeat": 4,
+        "fold": 4,
+        "auc_elastic_net": 1.0,
+        "auc_linear_svm": 1.0,
+        "diff_en_minus_svm": 0.0
+      }
+    ]
+  },
+  "de_cross_check_elastic_net": {
+    "top_n": 25,
+    "n_top_in_de_hits_q_lt_0.05": 23,
+    "n_de_hits_q_lt_0.05_total": 363,
+    "sign_agreement_shared_features": {
+      "n_checked": 25,
+      "n_agree": 25,
+      "fraction_agree": 1.0
+    },
+    "top_features": [
+      {
+        "feature": "sp|Q16822|PCKGM_HUMAN",
+        "gene": "PCKGM",
+        "classifier_coef": -0.127,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -1.0118,
+        "de_bh_q": 0.0516169043116385,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P29350|PTN6_HUMAN",
+        "gene": "PTN6",
+        "classifier_coef": -0.1219,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.8851,
+        "de_bh_q": 0.0012314678927523,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9NRR3|C42S2_HUMAN",
+        "gene": "C42S2",
+        "classifier_coef": 0.1084,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.8037,
+        "de_bh_q": 0.01932523972966,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6ZU65|UBN2_HUMAN",
+        "gene": "UBN2",
+        "classifier_coef": 0.104,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.793,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O60763|USO1_HUMAN",
+        "gene": "USO1",
+        "classifier_coef": -0.1022,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.7755,
+        "de_bh_q": 0.0001535687003321,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9HC98|NEK6_HUMAN / sp|Q8TDX7|NEK7_HUMAN",
+        "gene": "NEK6",
+        "classifier_coef": -0.0965,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.557,
+        "de_bh_q": 0.0760545137313567,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P36507|MP2K2_HUMAN",
+        "gene": "MP2K2",
+        "classifier_coef": -0.0946,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.2562,
+        "de_bh_q": 0.0001211007366696,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6NYC1|JMJD6_HUMAN",
+        "gene": "JMJD6",
+        "classifier_coef": -0.0916,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.8702,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P62333|PRS10_HUMAN",
+        "gene": "PRS10",
+        "classifier_coef": -0.0869,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.4373,
+        "de_bh_q": 0.0059660061315518,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O14653|GOSR2_HUMAN",
+        "gene": "GOSR2",
+        "classifier_coef": -0.0866,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.1882,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O43242|PSMD3_HUMAN",
+        "gene": "PSMD3",
+        "classifier_coef": -0.0851,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.5243,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9P253|VPS18_HUMAN",
+        "gene": "VPS18",
+        "classifier_coef": 0.0845,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 1.7001,
+        "de_bh_q": 0.000901440042356,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P26440|IVD_HUMAN",
+        "gene": "IVD",
+        "classifier_coef": 0.0843,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 1.4312,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9Y3C8|UFC1_HUMAN",
+        "gene": "UFC1",
+        "classifier_coef": -0.0839,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.0986,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q8N543|OGFD1_HUMAN",
+        "gene": "OGFD1",
+        "classifier_coef": 0.0826,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.6452,
+        "de_bh_q": 0.0239179200018767,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P19404|NDUV2_HUMAN",
+        "gene": "NDUV2",
+        "classifier_coef": -0.0824,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.8443,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P29692|EF1D_HUMAN",
+        "gene": "EF1D",
+        "classifier_coef": -0.0823,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.481,
+        "de_bh_q": 0.0100275950470904,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q7KZ85|SPT6H_HUMAN",
+        "gene": "SPT6H",
+        "classifier_coef": -0.0806,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.04,
+        "de_bh_q": 0.0031828594684918,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q3MIN7|RGL3_HUMAN",
+        "gene": "RGL3",
+        "classifier_coef": -0.0768,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.1555,
+        "de_bh_q": 0.0318364446300465,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P40939|ECHA_HUMAN",
+        "gene": "ECHA",
+        "classifier_coef": 0.0758,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.3423,
+        "de_bh_q": 0.0120360440612035,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O75844|FACE1_HUMAN",
+        "gene": "FACE1",
+        "classifier_coef": -0.0753,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.3806,
+        "de_bh_q": 0.0101833328679,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P54819|KAD2_HUMAN",
+        "gene": "KAD2",
+        "classifier_coef": 0.0747,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.4805,
+        "de_bh_q": 0.0408684084144111,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q13618|CUL3_HUMAN",
+        "gene": "CUL3",
+        "classifier_coef": 0.0744,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.4096,
+        "de_bh_q": 0.0220919035982993,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P43686|PRS6B_HUMAN",
+        "gene": "PRS6B",
+        "classifier_coef": -0.0736,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.5113,
+        "de_bh_q": 0.0023869210630379,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q02108|GCYA1_HUMAN",
+        "gene": "GCYA1",
+        "classifier_coef": 0.0734,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 1.7867,
+        "de_bh_q": 0.0018305620372993,
+        "sign_agrees_with_de": true
+      }
+    ]
+  },
+  "de_cross_check_linear_svm": {
+    "top_n": 25,
+    "n_top_in_de_hits_q_lt_0.05": 14,
+    "n_de_hits_q_lt_0.05_total": 363,
+    "sign_agreement_shared_features": {
+      "n_checked": 25,
+      "n_agree": 25,
+      "fraction_agree": 1.0
+    },
+    "top_features": [
+      {
+        "feature": "sp|Q16822|PCKGM_HUMAN",
+        "gene": "PCKGM",
+        "classifier_coef": -0.0068,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -1.0118,
+        "de_bh_q": 0.0516169043116385,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6ZU65|UBN2_HUMAN",
+        "gene": "UBN2",
+        "classifier_coef": 0.0062,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.793,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9H074|PAIP1_HUMAN",
+        "gene": "PAIP1",
+        "classifier_coef": -0.0062,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.6078,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|A8MWD9|RUXGL_HUMAN / sp|P62308|RUXG_HUMAN",
+        "gene": "RUXGL",
+        "classifier_coef": -0.0061,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.68,
+        "de_bh_q": 0.0031828594684918,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q0P6D2|DIK1C_HUMAN",
+        "gene": "DIK1C",
+        "classifier_coef": -0.006,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.4467,
+        "de_bh_q": 0.1214062891830417,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P29692|EF1D_HUMAN",
+        "gene": "EF1D",
+        "classifier_coef": -0.0059,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.481,
+        "de_bh_q": 0.0100275950470904,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9HC98|NEK6_HUMAN / sp|Q8TDX7|NEK7_HUMAN",
+        "gene": "NEK6",
+        "classifier_coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.557,
+        "de_bh_q": 0.0760545137313567,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q01082|SPTB2_HUMAN",
+        "gene": "SPTB2",
+        "classifier_coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.4825,
+        "de_bh_q": 0.0132103065337041,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q68D91|MBLC2_HUMAN",
+        "gene": "MBLC2",
+        "classifier_coef": -0.0058,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.2289,
+        "de_bh_q": 0.5121503657502219,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6P3W7|SCYL2_HUMAN",
+        "gene": "SCYL2",
+        "classifier_coef": 0.0057,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": 0.9141,
+        "de_bh_q": 0.1483471538383074,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q96FZ7|CHMP6_HUMAN",
+        "gene": "CHMP6",
+        "classifier_coef": -0.0057,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.6627,
+        "de_bh_q": 0.0871588103568996,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O60716|CTND1_HUMAN",
+        "gene": "CTND1",
+        "classifier_coef": -0.0057,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.5546,
+        "de_bh_q": 0.4169391868094621,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P19404|NDUV2_HUMAN",
+        "gene": "NDUV2",
+        "classifier_coef": -0.0056,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -1.8443,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P29350|PTN6_HUMAN",
+        "gene": "PTN6",
+        "classifier_coef": -0.0055,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.8851,
+        "de_bh_q": 0.0012314678927523,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9NRR3|C42S2_HUMAN",
+        "gene": "C42S2",
+        "classifier_coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.8037,
+        "de_bh_q": 0.01932523972966,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q13618|CUL3_HUMAN",
+        "gene": "CUL3",
+        "classifier_coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.4096,
+        "de_bh_q": 0.0220919035982993,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q9HD20|AT131_HUMAN",
+        "gene": "AT131",
+        "classifier_coef": 0.0055,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": 0.8839,
+        "de_bh_q": 0.0255436532996946,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O43242|PSMD3_HUMAN",
+        "gene": "PSMD3",
+        "classifier_coef": -0.0055,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.5243,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|O60763|USO1_HUMAN",
+        "gene": "USO1",
+        "classifier_coef": -0.0054,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.7755,
+        "de_bh_q": 0.0001535687003321,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6NVY1|HIBCH_HUMAN",
+        "gene": "HIBCH",
+        "classifier_coef": -0.0054,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -2.5155,
+        "de_bh_q": 0.0865596796586729,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q16881|TRXR1_HUMAN",
+        "gene": "TRXR1",
+        "classifier_coef": 0.0054,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": 0.3683,
+        "de_bh_q": 0.2643196525293446,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q6NYC1|JMJD6_HUMAN",
+        "gene": "JMJD6",
+        "classifier_coef": -0.0053,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.8702,
+        "de_bh_q": 0.0013705975747804,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q16363|LAMA4_HUMAN",
+        "gene": "LAMA4",
+        "classifier_coef": 0.0052,
+        "coef_sign_toward": "ADD",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": 0.4174,
+        "de_bh_q": 0.0709893956421933,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|P62333|PRS10_HUMAN",
+        "gene": "PRS10",
+        "classifier_coef": -0.0052,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": true,
+        "de_log2fc_add_minus_other": -0.4373,
+        "de_bh_q": 0.0059660061315518,
+        "sign_agrees_with_de": true
+      },
+      {
+        "feature": "sp|Q15067|ACOX1_HUMAN",
+        "gene": "ACOX1",
+        "classifier_coef": -0.0052,
+        "coef_sign_toward": "Other",
+        "in_de_table": true,
+        "de_bh_q_lt_0.05": false,
+        "de_log2fc_add_minus_other": -0.3039,
+        "de_bh_q": 0.416823102923704,
+        "sign_agrees_with_de": true
+      }
+    ]
+  },
+  "caveats": [
+    "EXPLORATORY, capped: performance NOT yet tested against a label-shuffle null; coefficients/weights flagged 'not tested against a null' until the null pass (run_null=True), which is also the leakage detector.",
+    "COHORT CONFOUND (hard): ADD is 100% Kerchner cohort (finding 0001). Among these 40 samples ADD and Kerchner are the SAME partition, so above-null performance CANNOT be attributed to disease vs collection-site. The label-shuffle null does NOT resolve this (it permutes the shared ADD/Kerchner partition).",
+    "Small n (10 positives): wide CV CIs; treat point estimates cautiously.",
+    "Matrix is already limma removeBatchEffect-corrected on Cohort (finding 0004); the pre-correction matrix is unavailable."
+  ]
+}

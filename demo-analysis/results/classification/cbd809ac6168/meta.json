@@ -1,0 +1,49 @@
+{
+  "analysis": "classification",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "params": {
+    "outcome": "Condition",
+    "binarize": "LevelMap",
+    "positive_label": "ADD",
+    "negative_levels": [
+      "HCN",
+      "PDCN",
+      "PDD"
+    ],
+    "method": "elastic_net_logistic",
+    "generalization_target": "individuals",
+    "cv_scheme": "stratified_kfold",
+    "n_splits": 5,
+    "n_repeats": 5,
+    "grouped": false,
+    "stability_repeats": 10,
+    "tuning_metric": "roc_auc",
+    "select": "best",
+    "c_grid": [
+      0.01,
+      0.025,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "l1_ratios": [
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1.0
+    ],
+    "feature_list": null,
+    "run_null": false,
+    "null_permutation": "units",
+    "seed": 20260915
+  },
+  "seed": 20260915,
+  "fingerprint": "cbd809ac6168",
+  "label": "add-vs-other elastic-net first-pass (no null)",
+  "created": null
+}

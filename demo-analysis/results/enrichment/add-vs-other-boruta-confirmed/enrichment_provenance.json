@@ -1,0 +1,175 @@
+{
+  "analysis": "GO/KEGG over-representation (g:Profiler) of the Boruta Confirmed set \u2014 ADD vs Other, directional (up/down separately)",
+  "seeded_from": {
+    "template": "enrichment",
+    "version": "0.1"
+  },
+  "organism": "hsapiens",
+  "sources": [
+    "GO:BP",
+    "GO:MF",
+    "GO:CC",
+    "KEGG"
+  ],
+  "correction": "g_SCS",
+  "user_threshold": 0.05,
+  "domain_scope": "custom (detected-proteome background)",
+  "gprofiler_version": [
+    "e114_eg62_p19_27110d83"
+  ],
+  "base_url": "https://biit.cs.ut.ee/gprofiler/api/gost/profile/",
+  "base_url_pinned": false,
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "boruta_fingerprint": "762e16f294e3",
+  "de_table": "results/differential_abundance/add-vs-other-moderated/contrast_table.csv",
+  "de_effect_orientation": "log2FC ADD minus Other",
+  "ambiguous_eps_abs_log2fc": 0.1,
+  "n_confirmed": 40,
+  "n_up": 18,
+  "n_down": 22,
+  "n_ambiguous": 0,
+  "n_background": 2340,
+  "decode_audit": {
+    "n_distinct_ids": 2340,
+    "n_mappable": 2340,
+    "mappable_pct": 100.0,
+    "by_source": {
+      "swissprot": 2337,
+      "trembl": 3
+    },
+    "n_unmappable": 0,
+    "unmappable_ids": [],
+    "examples": [
+      {
+        "original_id": "sp|A0A075B6H7|KV37_HUMAN / tr|A0A0C4DH90|A0A0C4DH90_HUMAN / sp|A0A0C4DH55|KVD07_HUMAN / sp|P01624|KV315_HUMAN",
+        "uniprot_accession": "A0A075B6H7"
+      },
+      {
+        "original_id": "sp|A0A075B6I1|LV460_HUMAN",
+        "uniprot_accession": "A0A075B6I1"
+      },
+      {
+        "original_id": "sp|A0A075B6S2|KVD29_HUMAN / sp|A0A0A0MRZ7|KVD26_HUMAN / sp|A2NJV5|KV229_HUMAN",
+        "uniprot_accession": "A0A075B6S2"
+      },
+      {
+        "original_id": "sp|A0A087WSY6|KVD15_HUMAN",
+        "uniprot_accession": "A0A087WSY6"
+      },
+      {
+        "original_id": "sp|A0A096LP55|QCR6L_HUMAN / sp|P07919|QCR6_HUMAN",
+        "uniprot_accession": "A0A096LP55"
+      }
+    ]
+  },
+  "decode_audit_csv": "results/enrichment/add-vs-other-boruta-confirmed/decode_audit.csv",
+  "up": {
+    "label": "up in ADD",
+    "n_query_features": 18,
+    "n_query_mapped": 18,
+    "n_query_recognized": 18,
+    "query_accessions": [
+      "P54619",
+      "Q53T59",
+      "O15357",
+      "Q8TBE0",
+      "Q12986",
+      "Q9NVK5",
+      "Q9P253",
+      "Q70IA8",
+      "Q6ZU65",
+      "Q9UK55",
+      "Q10471",
+      "Q02108",
+      "P19022",
+      "Q14643",
+      "Q99653",
+      "Q8IXB1",
+      "Q9H1Z4",
+      "Q96RL7"
+    ],
+    "n_terms_tested": 1209,
+    "n_terms_significant": 0,
+    "per_source": {
+      "GO:BP": {
+        "tested": 783,
+        "significant": 0
+      },
+      "GO:CC": {
+        "tested": 172,
+        "significant": 0
+      },
+      "GO:MF": {
+        "tested": 178,
+        "significant": 0
+      },
+      "KEGG": {
+        "tested": 76,
+        "significant": 0
+      }
+    },
+    "gprofiler_version": "e114_eg62_p19_27110d83",
+    "effective_domain_size": 2593,
+    "csv_full": "results/enrichment/add-vs-other-boruta-confirmed/up_in_ADD_terms.csv",
+    "csv_significant": "results/enrichment/add-vs-other-boruta-confirmed/up_in_ADD_significant.csv"
+  },
+  "down": {
+    "label": "down in ADD",
+    "n_query_features": 22,
+    "n_query_mapped": 22,
+    "n_query_recognized": 22,
+    "query_accessions": [
+      "P36507",
+      "Q9Y4E8",
+      "O43242",
+      "Q86UP2",
+      "O60763",
+      "Q9H9S4",
+      "O75683",
+      "Q9H074",
+      "Q9NT62",
+      "P19404",
+      "Q6NYC1",
+      "O75844",
+      "P62333",
+      "P55072",
+      "Q9NW15",
+      "P52209",
+      "P29350",
+      "Q7L591",
+      "Q13107",
+      "Q9UNS2",
+      "Q9BRX2",
+      "Q96T51"
+    ],
+    "n_terms_tested": 1419,
+    "n_terms_significant": 0,
+    "per_source": {
+      "GO:BP": {
+        "tested": 992,
+        "significant": 0
+      },
+      "GO:CC": {
+        "tested": 150,
+        "significant": 0
+      },
+      "GO:MF": {
+        "tested": 177,
+        "significant": 0
+      },
+      "KEGG": {
+        "tested": 100,
+        "significant": 0
+      }
+    },
+    "gprofiler_version": "e114_eg62_p19_27110d83",
+    "effective_domain_size": 2593,
+    "csv_full": "results/enrichment/add-vs-other-boruta-confirmed/down_in_ADD_terms.csv",
+    "csv_significant": "results/enrichment/add-vs-other-boruta-confirmed/down_in_ADD_significant.csv"
+  },
+  "caveats": [
+    "EXPLORATORY: small queries (18 up, 22 down) -> limited power; few terms may survive g:SCS.",
+    "CONFOUND CEILING (finding 0001): the Confirmed set is all-relevant to the ADD-vs-Other partition, which is ALIASED with collection site (ADD is 100% Kerchner cohort). This ORA characterizes WHAT compartment/pathway discriminative proteins belong to; it does NOT establish them as disease biology (could be site/handling). Enrichment describes the set; it does not resolve disease-vs-site.",
+    "g:Profiler is a live versioned service; the data version is pinned above. A network/service failure raises EnrichmentServiceError (never empty)."
+  ]
+}

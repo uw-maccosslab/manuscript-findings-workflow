@@ -1,0 +1,147 @@
+{
+  "format_version": 1,
+  "dataclass": "ClassificationResult",
+  "fields": {
+    "coefficients": {
+      "kind": "dataframe",
+      "file": "coefficients.parquet"
+    },
+    "fold_predictions": {
+      "kind": "list_dataclass",
+      "dir": "fold_predictions",
+      "count": 25,
+      "container": "list"
+    },
+    "cv_auc": {
+      "kind": "scalar",
+      "value": 0.94
+    },
+    "cv_auc_sd": {
+      "kind": "scalar",
+      "value": 0.08981462390204983
+    },
+    "cv_balanced_accuracy": {
+      "kind": "scalar",
+      "value": 0.8300000000000002
+    },
+    "cv_average_precision": {
+      "kind": "scalar",
+      "value": 0.87
+    },
+    "best_c": {
+      "kind": "scalar",
+      "value": 1.0
+    },
+    "best_l1_ratio": {
+      "kind": "scalar",
+      "value": 0.25
+    },
+    "grid_scores": {
+      "kind": "ndarray_npy",
+      "file": "grid_scores.npy"
+    },
+    "c_grid": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "l1_grid": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.99,
+        1.0
+      ]
+    },
+    "outcome": {
+      "kind": "scalar",
+      "value": "Condition"
+    },
+    "positive_label": {
+      "kind": "scalar",
+      "value": "ADD"
+    },
+    "negative_label": {
+      "kind": "scalar",
+      "value": "HCN|PDCN|PDD"
+    },
+    "generalization_target": {
+      "kind": "scalar",
+      "value": "individuals"
+    },
+    "grouped": {
+      "kind": "scalar",
+      "value": false
+    },
+    "groups_column": {
+      "kind": "none"
+    },
+    "n_samples": {
+      "kind": "scalar",
+      "value": 40
+    },
+    "n_positive": {
+      "kind": "scalar",
+      "value": 10
+    },
+    "n_negative": {
+      "kind": "scalar",
+      "value": 30
+    },
+    "n_features": {
+      "kind": "scalar",
+      "value": 2340
+    },
+    "n_dropped_constant": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "n_dropped_unassigned": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "random_state": {
+      "kind": "scalar",
+      "value": 20260915
+    },
+    "null_aucs": {
+      "kind": "ndarray_npy",
+      "file": "null_aucs.npy"
+    },
+    "observed_auc": {
+      "kind": "scalar",
+      "value": 0.9555555555555556
+    },
+    "null_p": {
+      "kind": "scalar",
+      "value": 0.000999000999000999
+    },
+    "n_features_requested": {
+      "kind": "none"
+    },
+    "n_features_matched": {
+      "kind": "none"
+    },
+    "null_permutation": {
+      "kind": "scalar",
+      "value": "samples"
+    },
+    "feature_names": {
+      "kind": "ndarray_json",
+      "file": "feature_names.json"
+    }
+  }
+}

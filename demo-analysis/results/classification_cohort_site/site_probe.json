@@ -1,0 +1,77 @@
+{
+  "analysis": "COHORT/SITE confound probe (non-ADD): Kerchner vs Poston",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "seed": 20260915,
+  "cache_fingerprint": "b31f645d39ee",
+  "cache_path": "results/classification_cohort_site/b31f645d39ee",
+  "design": "non-ADD subset (30) -> Cohort LevelMap Kerchner (7, positive) vs Poston (20, negative); 3 other-site samples (ADRC/PUC=2, PUC only=1) DROPPED; n=27. Elastic net, stratified 5-fold x 5-repeat, in-fold scaling, class_weight balanced, target=individuals.",
+  "n_samples": 27,
+  "n_positive_kerchner": 7,
+  "n_negative_poston": 20,
+  "n_dropped_other_sites": 3,
+  "best_c": 0.025,
+  "best_l1_ratio": 0.25,
+  "n_features_selected_nonzero": 1,
+  "null_read": {
+    "nested_cv_auc_tune_in_fold": 0.34,
+    "nested_cv_auc_sd_over_folds": 0.2305,
+    "cv_balanced_accuracy": 0.48,
+    "cv_pr_auc": 0.293,
+    "observed_auc_fixed_hyperparam": 0.475,
+    "null_auc_mean": 0.5003,
+    "null_auc_95pct_interval": [
+      0.475,
+      0.5167
+    ],
+    "null_auc_max": 0.7667,
+    "observed_minus_null_mean": -0.0253,
+    "empirical_permutation_p": 0.98302,
+    "n_permutations": 1000,
+    "collapses_to_null": true,
+    "verdict": "SITE AUC COLLAPSES to its null \u2014 the on-Cohort correction removed detectable within-non-ADD site structure. This does NOT clear the ADD result: ADD is single-cohort, so its correction was EXTRAPOLATED, not estimated (finding 0004)."
+  },
+  "feature_overlap_with_add_classifier": {
+    "add_en_cache_fingerprint": "902c1e98c018",
+    "n_features_total_background": 2340,
+    "n_site_selected_nonzero": 1,
+    "n_add_selected_nonzero": 257,
+    "full_selected_set_overlap": 0,
+    "full_selected_set_jaccard": 0.0,
+    "per_top_n": [
+      {
+        "top_n": 25,
+        "site_top_n": 1,
+        "add_top_n": 25,
+        "n_overlap": 0,
+        "overlap_genes": [],
+        "hypergeometric_p_enrichment_descriptive": 1.0
+      },
+      {
+        "top_n": 50,
+        "site_top_n": 1,
+        "add_top_n": 50,
+        "n_overlap": 0,
+        "overlap_genes": [],
+        "hypergeometric_p_enrichment_descriptive": 1.0
+      }
+    ],
+    "note": "High overlap => the ADD signal and the site signal ride on the same proteins (damning for a disease interpretation). Low overlap is NOT exoneration: EN keeps one of a correlated cluster, so the two minimal-optimal sets can pick different members of the same underlying structure."
+  },
+  "site_probe_stability_top": [
+    {
+      "feature": "sp|P19021|AMD_HUMAN",
+      "gene": "AMD",
+      "coef": 0.0047,
+      "coef_sign_toward": "Kerchner",
+      "selection_frequency": 0.0,
+      "sign_consistency": 0.0
+    }
+  ],
+  "warnings": [],
+  "caveats": [
+    "EXPLORATORY: tiny n (7 Kerchner positives), imbalanced; a bounded probe, not a powered analysis. Wide CIs.",
+    "The matrix is ALREADY batch-corrected on Cohort (finding 0004). A null-level site AUC means the correction removed detectable within-nonADD site structure \u2014 it does NOT clear the ADD result (ADD single-cohort => correction extrapolated, not estimated).",
+    "An above-null site AUC means residual site structure survives correction where it was estimable \u2014 evidence the ADD separation is substantially site.",
+    "Low feature overlap is NOT exoneration (EN keeps one of a correlated cluster; the two minimal-optimal sets can pick different members of the same structure)."
+  ]
+}

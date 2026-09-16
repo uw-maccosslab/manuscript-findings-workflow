@@ -1,0 +1,36 @@
+{
+  "analysis": "classification_cohort_site",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "params": {
+    "sample_subset": "non_ADD (Condition in {PDD,PDCN,HCN})",
+    "outcome": "Cohort",
+    "binarize": "LevelMap",
+    "positive_label": "Kerchner",
+    "negative_label": "Poston",
+    "dropped_levels": [
+      "ADRC/PUC",
+      "PUC only"
+    ],
+    "method": "elastic_net_logistic",
+    "generalization_target": "individuals",
+    "cv_scheme": "stratified_kfold",
+    "n_splits": 5,
+    "n_repeats": 5,
+    "grouped": false,
+    "stability_repeats": 10,
+    "tuning_metric": "roc_auc",
+    "select": "best",
+    "class_weight": "balanced",
+    "max_iter": 20000,
+    "feature_list": null,
+    "run_null": true,
+    "n_permutations": 1000,
+    "null_repeats": 3,
+    "null_permutation": "units",
+    "seed": 20260915
+  },
+  "seed": 20260915,
+  "fingerprint": "b31f645d39ee",
+  "label": "cohort-site probe Kerchner-vs-Poston among non-ADD (EN, run_null=True)",
+  "created": null
+}

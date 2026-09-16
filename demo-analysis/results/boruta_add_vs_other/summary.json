@@ -1,0 +1,434 @@
+{
+  "analysis": "BORUTA all-relevant selection \u2014 ADD vs Other (summary)",
+  "boruta_fingerprint": "762e16f294e3",
+  "boruta_params": {
+    "max_iter": 100,
+    "alpha": 0.05,
+    "perc": 100.0,
+    "seed": 20260915,
+    "n_iter_run": 99,
+    "task": "classification",
+    "classes": [
+      "ADD",
+      "Other"
+    ],
+    "n_samples": 40,
+    "n_features": 2340,
+    "shadow_threshold": 0.00533
+  },
+  "counts": {
+    "confirmed": 40,
+    "tentative": 15,
+    "rejected": 2285
+  },
+  "direction_split_of_confirmed": {
+    "up_in_add": 18,
+    "down_in_add": 22,
+    "ambiguous": 0,
+    "not_in_de_table": 0
+  },
+  "ambiguous_threshold_abs_log2fc": 0.1,
+  "overlaps": {
+    "n_confirmed": 40,
+    "n_en_minimal_optimal": 257,
+    "n_de_hits": 363,
+    "confirmed_in_en": 33,
+    "confirmed_not_in_en_redundant_but_real": 7,
+    "confirmed_in_de_hits": 38,
+    "confirmed_not_in_de_hits": 2,
+    "redundant_but_real_features": [
+      "ANO10",
+      "ATG3",
+      "BAHD1",
+      "DOK3",
+      "NFX1",
+      "UBP4",
+      "VP13A"
+    ]
+  },
+  "confirmed_features": [
+    {
+      "feature": "sp|P36507|MP2K2_HUMAN",
+      "short_name": "MP2K2",
+      "de_log2fc_add_minus_other": -1.2562,
+      "de_bh_q": 0.0001211007366696,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9Y4E8|UBP15_HUMAN",
+      "short_name": "UBP15",
+      "de_log2fc_add_minus_other": -0.5687,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|O43242|PSMD3_HUMAN",
+      "short_name": "PSMD3",
+      "de_log2fc_add_minus_other": -0.5243,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P54619|AAKG1_HUMAN",
+      "short_name": "AAKG1",
+      "de_log2fc_add_minus_other": 0.8233,
+      "de_bh_q": 0.0016673987681407,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q53T59|H1BP3_HUMAN",
+      "short_name": "H1BP3",
+      "de_log2fc_add_minus_other": 2.7125,
+      "de_bh_q": 0.0134880592728988,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q86UP2|KTN1_HUMAN",
+      "short_name": "KTN1",
+      "de_log2fc_add_minus_other": -1.5395,
+      "de_bh_q": 0.0133345501123467,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|O60763|USO1_HUMAN",
+      "short_name": "USO1",
+      "de_log2fc_add_minus_other": -0.7755,
+      "de_bh_q": 0.0001535687003321,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9H9S4|CB39L_HUMAN",
+      "short_name": "CB39L",
+      "de_log2fc_add_minus_other": -0.9581,
+      "de_bh_q": 0.0031828594684918,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|O75683|SURF6_HUMAN",
+      "short_name": "SURF6",
+      "de_log2fc_add_minus_other": -0.7547,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9H074|PAIP1_HUMAN",
+      "short_name": "PAIP1",
+      "de_log2fc_add_minus_other": -0.6078,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9NT62|ATG3_HUMAN",
+      "short_name": "ATG3",
+      "de_log2fc_add_minus_other": -1.8717,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P19404|NDUV2_HUMAN",
+      "short_name": "NDUV2",
+      "de_log2fc_add_minus_other": -1.8443,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|O15357|SHIP2_HUMAN",
+      "short_name": "SHIP2",
+      "de_log2fc_add_minus_other": 0.7599,
+      "de_bh_q": 0.0049715231382893,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q6NYC1|JMJD6_HUMAN",
+      "short_name": "JMJD6",
+      "de_log2fc_add_minus_other": -0.8702,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|O75844|FACE1_HUMAN",
+      "short_name": "FACE1",
+      "de_log2fc_add_minus_other": -0.3806,
+      "de_bh_q": 0.0101833328679,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q8TBE0|BAHD1_HUMAN",
+      "short_name": "BAHD1",
+      "de_log2fc_add_minus_other": 1.2814,
+      "de_bh_q": 0.0016673987681407,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P62333|PRS10_HUMAN",
+      "short_name": "PRS10",
+      "de_log2fc_add_minus_other": -0.4373,
+      "de_bh_q": 0.0059660061315518,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P55072|TERA_HUMAN",
+      "short_name": "TERA",
+      "de_log2fc_add_minus_other": -0.3206,
+      "de_bh_q": 0.0064585978975857,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q12986|NFX1_HUMAN",
+      "short_name": "NFX1",
+      "de_log2fc_add_minus_other": 1.0884,
+      "de_bh_q": 0.0537145521531339,
+      "de_bh_q_lt_thresh": false,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9NVK5|FGOP2_HUMAN",
+      "short_name": "FGOP2",
+      "de_log2fc_add_minus_other": 0.7357,
+      "de_bh_q": 0.0031828594684918,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9P253|VPS18_HUMAN",
+      "short_name": "VPS18",
+      "de_log2fc_add_minus_other": 1.7001,
+      "de_bh_q": 0.000901440042356,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9NW15|ANO10_HUMAN",
+      "short_name": "ANO10",
+      "de_log2fc_add_minus_other": -0.8641,
+      "de_bh_q": 0.0058303435616767,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q70IA8|MOB3C_HUMAN / sp|Q96BX8|MOB3A_HUMAN / sp|Q86TA1|MOB3B_HUMAN",
+      "short_name": "MOB3C",
+      "de_log2fc_add_minus_other": 2.6629,
+      "de_bh_q": 0.0057149523506493,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q6ZU65|UBN2_HUMAN",
+      "short_name": "UBN2",
+      "de_log2fc_add_minus_other": 0.793,
+      "de_bh_q": 0.0013705975747804,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P52209|6PGD_HUMAN",
+      "short_name": "6PGD",
+      "de_log2fc_add_minus_other": -0.7475,
+      "de_bh_q": 0.0031828594684918,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9UK55|ZPI_HUMAN",
+      "short_name": "ZPI",
+      "de_log2fc_add_minus_other": 1.3976,
+      "de_bh_q": 0.0107679503287432,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P29350|PTN6_HUMAN",
+      "short_name": "PTN6",
+      "de_log2fc_add_minus_other": -0.8851,
+      "de_bh_q": 0.0012314678927523,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q10471|GALT2_HUMAN",
+      "short_name": "GALT2",
+      "de_log2fc_add_minus_other": 0.6166,
+      "de_bh_q": 0.0031828594684918,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q02108|GCYA1_HUMAN",
+      "short_name": "GCYA1",
+      "de_log2fc_add_minus_other": 1.7867,
+      "de_bh_q": 0.0018305620372993,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|P19022|CADH2_HUMAN",
+      "short_name": "CADH2",
+      "de_log2fc_add_minus_other": 1.5454,
+      "de_bh_q": 0.0035672293118675,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q7L591|DOK3_HUMAN",
+      "short_name": "DOK3",
+      "de_log2fc_add_minus_other": -0.3862,
+      "de_bh_q": 0.0264475067288058,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q14643|ITPR1_HUMAN",
+      "short_name": "ITPR1",
+      "de_log2fc_add_minus_other": 1.012,
+      "de_bh_q": 0.0033373799144055,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q99653|CHP1_HUMAN",
+      "short_name": "CHP1",
+      "de_log2fc_add_minus_other": 0.3267,
+      "de_bh_q": 0.031619100281461,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q8IXB1|DJC10_HUMAN",
+      "short_name": "DJC10",
+      "de_log2fc_add_minus_other": 0.8102,
+      "de_bh_q": 0.0016673987681407,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q13107|UBP4_HUMAN",
+      "short_name": "UBP4",
+      "de_log2fc_add_minus_other": -0.6599,
+      "de_bh_q": 0.0039950115904667,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9H1Z4|WDR13_HUMAN",
+      "short_name": "WDR13",
+      "de_log2fc_add_minus_other": 0.8233,
+      "de_bh_q": 0.0794764295915596,
+      "de_bh_q_lt_thresh": false,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9UNS2|CSN3_HUMAN",
+      "short_name": "CSN3",
+      "de_log2fc_add_minus_other": -0.3803,
+      "de_bh_q": 0.014855701405439,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q96RL7|VP13A_HUMAN",
+      "short_name": "VP13A",
+      "de_log2fc_add_minus_other": 0.4344,
+      "de_bh_q": 0.0291367662299759,
+      "de_bh_q_lt_thresh": true,
+      "direction": "up_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q9BRX2|PELO_HUMAN",
+      "short_name": "PELO",
+      "de_log2fc_add_minus_other": -0.7544,
+      "de_bh_q": 0.0016673987681407,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    },
+    {
+      "feature": "sp|Q96T51|RUFY1_HUMAN",
+      "short_name": "RUFY1",
+      "de_log2fc_add_minus_other": -1.0462,
+      "de_bh_q": 0.0120360440612035,
+      "de_bh_q_lt_thresh": true,
+      "direction": "down_in_add",
+      "marker_class": null
+    }
+  ],
+  "tentative_features_short_names": [
+    "AP2A1",
+    "C2CD5",
+    "CSN7B",
+    "DPM3",
+    "GOSR2",
+    "GPV",
+    "KPRB",
+    "KS6A3",
+    "MATN2",
+    "NKRF",
+    "PFD4",
+    "SC16A",
+    "SHLB1",
+    "SKIV2",
+    "TENS1"
+  ],
+  "caveats": [
+    "EXPLORATORY. Small n (10 positives / 30 negatives); Boruta's shadow null addresses relevance-vs-noise, not sampling stability at this n.",
+    "COHORT CONFOUND (hard, finding 0001): ADD is 100% Kerchner cohort. Among these 40 samples 'ADD' and 'Kerchner' are the SAME partition, so the Confirmed set is all-relevant to the ADD-vs-Other partition, which is ALIASED with collection site \u2014 NOT necessarily all-relevant to disease. The shadow null does NOT resolve this confound.",
+    "Matrix is already median-normalized + limma/ComBat batch-corrected on Cohort (finding 0004); feeding Boruta the corrected matrix is legitimate for selection (not a per-feature significance test).",
+    "Direction labels are taken from the moderated DE contrast (log2FC ADD-Other); the DE 'gene' column is empty for this dataset, so short_name is the UniProt entry mnemonic, not a curated HGNC symbol."
+  ]
+}

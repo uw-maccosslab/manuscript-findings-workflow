@@ -1,0 +1,30 @@
+{
+  "analysis": "boruta",
+  "data_version": "protein-data.csv sha256:90a0462eb03a02bd",
+  "params": {
+    "target": "add_vs_other",
+    "binarize": "ADD=1 vs {PDD,PDCN,HCN}=0",
+    "positive_label": "ADD",
+    "negative_levels": [
+      "HCN",
+      "PDCN",
+      "PDD"
+    ],
+    "task": "classification",
+    "method": "boruta_all_relevant",
+    "estimator": "random_forest_classifier(class_weight=balanced)",
+    "n_estimators": "auto",
+    "max_iter": 100,
+    "alpha": 0.05,
+    "perc": 100.0,
+    "two_step": true,
+    "run_null": false,
+    "shadow_null": "built-in (permuted shadow features)",
+    "cv": "none (selection on whole matrix)",
+    "seed": 20260915
+  },
+  "seed": 20260915,
+  "fingerprint": "762e16f294e3",
+  "label": "add-vs-other Boruta all-relevant (max_iter=100, alpha=0.05, perc=100.0; defaults)",
+  "created": null
+}

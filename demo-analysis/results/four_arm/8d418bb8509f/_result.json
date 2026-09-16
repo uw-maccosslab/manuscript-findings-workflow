@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "dataclass": "FourArmResult",
+  "fields": {
+    "signature_direction": {
+      "kind": "dataframe",
+      "file": "signature_direction.parquet"
+    },
+    "sample_scores": {
+      "kind": "dataframe",
+      "file": "sample_scores.parquet"
+    },
+    "per_arm_scores": {
+      "kind": "dataframe",
+      "file": "per_arm_scores.parquet"
+    },
+    "arm_comparisons": {
+      "kind": "dataframe",
+      "file": "arm_comparisons.parquet"
+    },
+    "add_vs_pdd_table": {
+      "kind": "dataframe",
+      "file": "add_vs_pdd_table.parquet"
+    },
+    "n_up": {
+      "kind": "scalar",
+      "value": 18
+    },
+    "n_down": {
+      "kind": "scalar",
+      "value": 22
+    },
+    "n_confirmed": {
+      "kind": "scalar",
+      "value": 40
+    },
+    "seed": {
+      "kind": "scalar",
+      "value": 20260915
+    },
+    "signature_set": {
+      "kind": "scalar",
+      "value": "boruta:762e16f294e3 (40 Confirmed, ADD-vs-Other)"
+    }
+  }
+}

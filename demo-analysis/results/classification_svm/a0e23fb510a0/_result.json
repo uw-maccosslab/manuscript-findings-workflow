@@ -1,0 +1,180 @@
+{
+  "format_version": 1,
+  "dataclass": "SVMClassificationResult",
+  "fields": {
+    "coefficients": {
+      "kind": "dataframe",
+      "file": "coefficients.parquet"
+    },
+    "fold_predictions": {
+      "kind": "list_dataclass",
+      "dir": "fold_predictions",
+      "count": 25,
+      "container": "list"
+    },
+    "cv_auc": {
+      "kind": "scalar",
+      "value": 0.9633333333333334
+    },
+    "cv_auc_sd": {
+      "kind": "scalar",
+      "value": 0.06699917080747257
+    },
+    "cv_balanced_accuracy": {
+      "kind": "scalar",
+      "value": 0.74
+    },
+    "cv_average_precision": {
+      "kind": "scalar",
+      "value": 0.92
+    },
+    "repeat_aucs": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        0.9666666666666668,
+        0.95,
+        0.9666666666666668,
+        0.9833333333333334,
+        0.95
+      ]
+    },
+    "repeat_pooled_aucs": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        0.9233333333333333,
+        0.92,
+        0.9233333333333333,
+        0.96,
+        0.9500000000000001
+      ]
+    },
+    "best_c": {
+      "kind": "scalar",
+      "value": 0.001
+    },
+    "grid_scores": {
+      "kind": "ndarray_npy",
+      "file": "grid_scores.npy"
+    },
+    "grid_scores_sd": {
+      "kind": "ndarray_npy",
+      "file": "grid_scores_sd.npy"
+    },
+    "c_grid": {
+      "kind": "sequence",
+      "container": "tuple",
+      "value": [
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1
+      ]
+    },
+    "top_k": {
+      "kind": "scalar",
+      "value": 20
+    },
+    "n_support_vectors": {
+      "kind": "scalar",
+      "value": 22
+    },
+    "n_support_negative": {
+      "kind": "scalar",
+      "value": 12
+    },
+    "n_support_positive": {
+      "kind": "scalar",
+      "value": 10
+    },
+    "outcome": {
+      "kind": "scalar",
+      "value": "Condition"
+    },
+    "positive_label": {
+      "kind": "scalar",
+      "value": "ADD"
+    },
+    "negative_label": {
+      "kind": "scalar",
+      "value": "HCN|PDCN|PDD"
+    },
+    "generalization_target": {
+      "kind": "scalar",
+      "value": "individuals"
+    },
+    "grouped": {
+      "kind": "scalar",
+      "value": false
+    },
+    "groups_column": {
+      "kind": "none"
+    },
+    "n_samples": {
+      "kind": "scalar",
+      "value": 40
+    },
+    "n_positive": {
+      "kind": "scalar",
+      "value": 10
+    },
+    "n_negative": {
+      "kind": "scalar",
+      "value": 30
+    },
+    "n_features": {
+      "kind": "scalar",
+      "value": 2340
+    },
+    "n_dropped_constant": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "n_dropped_unassigned": {
+      "kind": "scalar",
+      "value": 0
+    },
+    "random_state": {
+      "kind": "scalar",
+      "value": 20260915
+    },
+    "null_aucs": {
+      "kind": "ndarray_npy",
+      "file": "null_aucs.npy"
+    },
+    "observed_auc": {
+      "kind": "scalar",
+      "value": 0.9722222222222222
+    },
+    "null_p": {
+      "kind": "scalar",
+      "value": 0.000999000999000999
+    },
+    "n_features_requested": {
+      "kind": "none"
+    },
+    "n_features_matched": {
+      "kind": "none"
+    },
+    "plateau_start_c": {
+      "kind": "scalar",
+      "value": 0.001
+    },
+    "n_folds_sub_plateau": {
+      "kind": "scalar",
+      "value": 13
+    },
+    "null_permutation": {
+      "kind": "scalar",
+      "value": "samples"
+    },
+    "feature_names": {
+      "kind": "ndarray_json",
+      "file": "feature_names.json"
+    }
+  }
+}

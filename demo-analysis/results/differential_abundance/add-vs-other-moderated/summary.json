@@ -1,0 +1,497 @@
+{
+  "contrast": "ADD vs Other (pooled PDD+PDCN+HCN)",
+  "method": "moderated (limma-style empirical-Bayes linear model)",
+  "effect": "log2 fold change, ADD minus Other",
+  "n_samples": 40,
+  "n_add": 10,
+  "n_other": 30,
+  "n_features_tested": 2340,
+  "covariates": [],
+  "reference_level": {
+    "ADDvsOther": "Other"
+  },
+  "prior_variance": 0.26203721319850887,
+  "prior_df": 3.115644976807337,
+  "n_bh_q_lt_0.05": 363,
+  "n_bh_q_lt_0.10": 594,
+  "pvalue_calibration": {
+    "n_features_tested": 2340,
+    "hist_bin_edges": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001,
+      1.0
+    ],
+    "hist_counts": [
+      761,
+      247,
+      140,
+      108,
+      95,
+      84,
+      81,
+      82,
+      70,
+      54,
+      75,
+      62,
+      46,
+      65,
+      68,
+      63,
+      59,
+      66,
+      61,
+      53
+    ],
+    "hist_density_vs_uniform": [
+      6.504,
+      2.111,
+      1.197,
+      0.923,
+      0.812,
+      0.718,
+      0.692,
+      0.701,
+      0.598,
+      0.462,
+      0.641,
+      0.53,
+      0.393,
+      0.556,
+      0.581,
+      0.538,
+      0.504,
+      0.564,
+      0.521,
+      0.453
+    ],
+    "pi0_storey_upper_half": 0.528,
+    "null_region_density_p_gt_0p5": 0.528,
+    "near_zero_spike_ratio": 12.314,
+    "frac_p_lt_0.05": 0.3252,
+    "frac_p_lt_0.01": 0.1722,
+    "verdict": "SIGNAL PRESENT but TAIL SUPPRESSED \u2014 a strong near-zero spike (12.3x) sits on a null region DEPLETED to 0.53x uniform (a mostly-null proteome should sit ~0.7-0.95). A tail this low implies either ~53% of proteins are truly differential (implausibly high for this contrast) OR the p-values are ANTICONSERVATIVE from variance deflation (finding 0004) / the ADD-Kerchner cohort confound inflating the small-p mass. Real enrichment is present but the SIGNIFICANT-HIT COUNT is likely inflated -- trust effect sizes + CIs over q-values."
+  },
+  "top_hits_by_bh_q": [
+    {
+      "feature": "sp|P36507|MP2K2_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -1.256,
+      "ci95": [
+        -1.638,
+        -0.874
+      ],
+      "p": 5.1752451568227117e-08,
+      "bh_q": 0.00012110073666965146,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|O60763|USO1_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.776,
+      "ci95": [
+        -1.022,
+        -0.529
+      ],
+      "p": 1.312552994291739e-07,
+      "bh_q": 0.00015356870033213346,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q9P253|VPS18_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": 1.7,
+      "ci95": [
+        1.097,
+        2.303
+      ],
+      "p": 1.1556923619949469e-06,
+      "bh_q": 0.0009014400423560585,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P29350|PTN6_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.885,
+      "ci95": [
+        -1.209,
+        -0.561
+      ],
+      "p": 2.1050733209441594e-06,
+      "bh_q": 0.0012314678927523332,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P19971|TYPH_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -1.323,
+      "ci95": [
+        -1.85,
+        -0.797
+      ],
+      "p": 8.611437599211254e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q9Y262|EIF3L_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": 1.74,
+      "ci95": [
+        1.046,
+        2.434
+      ],
+      "p": 9.040227727624106e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P26440|IVD_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": 1.431,
+      "ci95": [
+        0.85,
+        2.012
+      ],
+      "p": 1.2055845821294466e-05,
+      "bh_q": 0.0013705975747804696,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|Q9Y4E8|UBP15_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.569,
+      "ci95": [
+        -0.79,
+        -0.347
+      ],
+      "p": 6.301048440960068e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q9Y3C8|UFC1_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -1.099,
+      "ci95": [
+        -1.528,
+        -0.669
+      ],
+      "p": 6.4439167644667826e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P51812|KS6A3_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -2.905,
+      "ci95": [
+        -4.054,
+        -1.755
+      ],
+      "p": 7.986394479388727e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q6ZU65|UBN2_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": 0.793,
+      "ci95": [
+        0.478,
+        1.108
+      ],
+      "p": 8.568061816042861e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|O75683|SURF6_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.755,
+      "ci95": [
+        -1.044,
+        -0.466
+      ],
+      "p": 4.579650859552115e-06,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P19404|NDUV2_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -1.844,
+      "ci95": [
+        -2.598,
+        -1.091
+      ],
+      "p": 1.346366183174303e-05,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P30626|SORCN_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.899,
+      "ci95": [
+        -1.261,
+        -0.537
+      ],
+      "p": 1.064327732673859e-05,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q9H074|PAIP1_HUMAN",
+      "gene": "",
+      "marker_class": "",
+      "log2fc_add_minus_other": -0.608,
+      "ci95": [
+        -0.856,
+        -0.359
+      ],
+      "p": 1.3471685564081538e-05,
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    }
+  ],
+  "strongest_effects_by_abs_log2fc": [
+    {
+      "feature": "sp|Q16186|ADRM1_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": 3.517,
+      "ci95": [
+        2.002,
+        5.031
+      ],
+      "bh_q": 0.0022728832753027544,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P51812|KS6A3_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.905,
+      "ci95": [
+        -4.054,
+        -1.755
+      ],
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P13805|TNNT1_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.866,
+      "ci95": [
+        -4.481,
+        -1.251
+      ],
+      "bh_q": 0.015387171809253478,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q53T59|H1BP3_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": 2.712,
+      "ci95": [
+        1.219,
+        4.206
+      ],
+      "bh_q": 0.013488059272898886,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|Q70IA8|MOB3C_HUMAN / sp|Q96BX8|MOB3A_HUMAN / sp|Q86TA1|MOB3B_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": 2.663,
+      "ci95": [
+        1.376,
+        3.95
+      ],
+      "bh_q": 0.0057149523506493756,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P62241|RS8_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.614,
+      "ci95": [
+        -3.972,
+        -1.256
+      ],
+      "bh_q": 0.010183332867900075,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q6NVY1|HIBCH_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.516,
+      "ci95": [
+        -4.605,
+        -0.426
+      ],
+      "bh_q": 0.08655967965867294,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q9NR46|SHLB2_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.51,
+      "ci95": [
+        -4.495,
+        -0.525
+      ],
+      "bh_q": 0.07225437367893756,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q15477|SKIV2_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": 2.482,
+      "ci95": [
+        1.281,
+        3.682
+      ],
+      "bh_q": 0.0057149523506493756,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P62942|FKB1A_HUMAN",
+      "gene": "",
+      "log2fc_add_minus_other": -2.289,
+      "ci95": [
+        -3.187,
+        -1.39
+      ],
+      "bh_q": 0.0013705975747804696,
+      "direction": "down in ADD"
+    }
+  ],
+  "known_marker_hits": [
+    {
+      "feature": "sp|O00560|SDCB1_HUMAN",
+      "gene": "SDCBP/syntenin-1",
+      "marker_class": "EV-QC (MISEV2018 cytosolic)",
+      "log2fc_add_minus_other": -0.51,
+      "bh_q": 0.05231419639610149,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P21926|CD9_HUMAN",
+      "gene": "CD9",
+      "marker_class": "EV-QC (MISEV2018 tetraspanin)",
+      "log2fc_add_minus_other": -0.465,
+      "bh_q": 0.1917862290222897,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|O75955|FLOT1_HUMAN",
+      "gene": "FLOT1",
+      "marker_class": "EV-QC (MISEV2018 flotillin)",
+      "log2fc_add_minus_other": 0.211,
+      "bh_q": 0.28607733215087655,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|Q99816|TS101_HUMAN",
+      "gene": "TSG101",
+      "marker_class": "EV-QC (MISEV2018 cytosolic)",
+      "log2fc_add_minus_other": 0.16,
+      "bh_q": 0.37544119118376346,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P00488|F13A_HUMAN",
+      "gene": "F13A1",
+      "marker_class": "unbiased plasma-EV AD candidate (Nielsen 2021, unreplicated)",
+      "log2fc_add_minus_other": -0.169,
+      "bh_q": 0.5617052455448853,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P14136|GFAP_HUMAN",
+      "gene": "GFAP",
+      "marker_class": "AD glial marker (parent protein)",
+      "log2fc_add_minus_other": -0.36,
+      "bh_q": 0.6060219669430603,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|Q8WUM4|PDC6I_HUMAN",
+      "gene": "PDCD6IP/ALIX",
+      "marker_class": "EV-QC (MISEV2018 cytosolic)",
+      "log2fc_add_minus_other": 0.053,
+      "bh_q": 0.7021293877723686,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P05160|F13B_HUMAN",
+      "gene": "F13B",
+      "marker_class": "unbiased plasma-EV AD candidate (Nielsen 2021, unreplicated)",
+      "log2fc_add_minus_other": -0.13,
+      "bh_q": 0.7591983067993123,
+      "direction": "down in ADD"
+    },
+    {
+      "feature": "sp|P32004|L1CAM_HUMAN",
+      "gene": "L1CAM",
+      "marker_class": "contested NDEV capture marker",
+      "log2fc_add_minus_other": 0.101,
+      "bh_q": 0.8149122324593022,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P13591|NCAM1_HUMAN",
+      "gene": "NCAM1",
+      "marker_class": "contested NDEV capture marker",
+      "log2fc_add_minus_other": 0.031,
+      "bh_q": 0.9374608006013956,
+      "direction": "up in ADD"
+    },
+    {
+      "feature": "sp|P05067|A4_HUMAN",
+      "gene": "APP",
+      "marker_class": "AD amyloid parent protein",
+      "log2fc_add_minus_other": 0.019,
+      "bh_q": 0.9511127006059252,
+      "direction": "up in ADD"
+    }
+  ],
+  "caveats": [
+    "NO cohort covariate: ADD is 100% Kerchner (single-cohort), aliased with the contrast (rank-deficient); the ADD effect is inseparable from a Kerchner-site effect (findings 0001/0004).",
+    "Matrix is already limma removeBatchEffect-corrected on Cohort; the pre-correction matrix is unavailable, so batch-as-covariate-on-uncorrected robustness is impossible. DE on corrected output deflates variance -> p-values/BH-q are ANTICONSERVATIVE. Weight effect sizes + CIs over significance.",
+    "Exploratory: small n (10 vs 30), imbalanced, confounded."
+  ]
+}

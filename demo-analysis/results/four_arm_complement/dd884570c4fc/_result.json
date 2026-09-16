@@ -1,0 +1,54 @@
+{
+  "format_version": 1,
+  "dataclass": "ComplementResult",
+  "fields": {
+    "mapping": {
+      "kind": "dataframe",
+      "file": "mapping.parquet"
+    },
+    "mapping_secondary": {
+      "kind": "dataframe",
+      "file": "mapping_secondary.parquet"
+    },
+    "sample_scores": {
+      "kind": "dataframe",
+      "file": "sample_scores.parquet"
+    },
+    "per_arm_scores": {
+      "kind": "dataframe",
+      "file": "per_arm_scores.parquet"
+    },
+    "arm_comparisons": {
+      "kind": "dataframe",
+      "file": "arm_comparisons.parquet"
+    },
+    "within_site_tests": {
+      "kind": "dataframe",
+      "file": "within_site_tests.parquet"
+    },
+    "cohort_orthogonality": {
+      "kind": "dataframe",
+      "file": "cohort_orthogonality.parquet"
+    },
+    "n_primary_mapped": {
+      "kind": "scalar",
+      "value": 27
+    },
+    "n_primary_requested": {
+      "kind": "scalar",
+      "value": 27
+    },
+    "n_secondary_mapped": {
+      "kind": "scalar",
+      "value": 15
+    },
+    "seed": {
+      "kind": "scalar",
+      "value": 20260915
+    },
+    "source_gsea": {
+      "kind": "scalar",
+      "value": "gsea:fed7a349c550 (KEGG Complement/coagulation cascades leading-edge)"
+    }
+  }
+}
