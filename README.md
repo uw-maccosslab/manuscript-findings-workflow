@@ -28,7 +28,13 @@ and it **records findings automatically as they emerge**, complete with the prov
 to regenerate them (the script, the data version, the cached result). See the paper for the
 full motivation and design.
 
-<!-- TODO: add the link to the findings-workflow plugin repository / installation here. -->
+The plugin lives at **[github.com/mriffle/findings-ai-collab-workflow](https://github.com/mriffle/findings-ai-collab-workflow)**.
+Install it from within Claude Code:
+
+```text
+/plugin marketplace add mriffle/findings-ai-collab-workflow
+/plugin install findings-workflow@findings-workflow
+```
 
 ## What's in this repository
 
